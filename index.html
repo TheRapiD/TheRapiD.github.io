@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbacoa Cuajimalpa</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            text-align: center;
+        }
+
+        .menu-content {
+            width: 90%;
+            max-width: 1000px;
+            background: #222;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .menu-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .menu-section img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-content {
+                width: 95%;
+                padding: 20px;
+            }
+            .menu-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-content">
+        <h2>Nuestra Carta</h2>
+        <div class="menu-grid">
+            <div class="menu-section">
+                <h3>Barbacoa de Borrego</h3>
+                <p>Deliciosa barbacoa de borrego cocida lentamente en horno de tierra.</p>
+                <img src="barbacoa.jpg" alt="Barbacoa de borrego">
+            </div>
+            <div class="menu-section">
+                <h3>Consomé</h3>
+                <p>Un caldo sabroso hecho con los jugos de la barbacoa.</p>
+                <img src="consome.jpg" alt="Consomé de barbacoa">
+            </div>
+            <div class="menu-section">
+                <h3>Tacos de Barbacoa</h3>
+                <p>Tortillas rellenas de barbacoa con cebolla, cilantro y salsa.</p>
+                <img src="tacos.jpg" alt="Tacos de barbacoa">
+            </div>
+            <div class="menu-section">
+                <h3>Quesadillas</h3>
+                <p>Queso derretido en tortillas de maíz o harina, con opción de barbacoa.</p>
+                <img src="quesadillas.jpg" alt="Quesadillas">
+            </div>
+            <div class="menu-section">
+                <h3>Refrescos y Bebidas</h3>
+                <p>Variedad de refrescos y bebidas tradicionales.</p>
+                <img src="bebidas.jpg" alt="Refrescos y bebidas">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
